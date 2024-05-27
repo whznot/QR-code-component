@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* text sizes */
+    --header-text-size: 22px;
+    --body-text-size: 15px;
+
+    /* colors */
+    --header-color: #1F314F;
+    --text-color: #7D889E;
+    --background-color: #D5E1EF;
+    --container-background-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.0477);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 320px;
+    height: 497px;
+    border-radius: 20px;
+    margin: 85px 28px;
+    box-shadow: 0 25px 25px var(--box-shadow-color);
+    background-color: var(--container-background-color);
+    padding-bottom: 40px; /* Добавлен отступ снизу */
+}
+
+.wrapper {
+    padding: 16px;
+}
+
+.qr-code {
+    width: 100%;
+    max-width: 288px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+h1 {
+    font-size: var(--header-text-size);
+    color: var(--header-color);
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+p {
+    font-size: var(--body-text-size);
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.attribution {
+    text-align: center;
+}
